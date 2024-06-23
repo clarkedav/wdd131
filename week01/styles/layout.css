@@ -1,3 +1,11 @@
+p {
+
+    border: 5px  blue;
+  
+    margin: 15px;
+    box-sizing: border-box;
+  
+  }
 body {
     display: grid;
     height: 100vh;
