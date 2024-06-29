@@ -4,11 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD-131</title>
+    <title>WDD-131- Dynamic Wed Fundamentals- Esumei David</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Esumei David. This page contains information about dynamic web fundamentals, including various web development resources and examples.">
+    <meta name="author" content="Esumei David">
 </head>
 
 <body>
-    David
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/david-esumei-4b09041a6">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
+                        Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Web Dev resources</h2>
+            <img src="your-image-1.jpg" alt="Image of Esumei David">
+            <p>Web Dev resources</p>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/">Resource 1</a></li>
+                <li><a href="https://www.w3schools.com/">Resource 2</a></li>
+                <li><a href="https://dev.to/">Resource 3</a></li>
+            </ul>
+        </section>
+        <section class="card">
+    </main>
+    <footer>
+        <p>&copy; <span id="2024"></span> Esumei David, Lagos/Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('2024').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
 
 </html>
