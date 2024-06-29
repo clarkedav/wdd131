@@ -8,46 +8,64 @@
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals - Esumei David. This page contains information about dynamic web fundamentals, including various web development resources and examples.">
     <meta name="author" content="Esumei David">
-    <link rel="styles" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script src="script/getdates.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <h1>WDD 131:Dynamic Web Fundamentals - <span>Esumei David</span></h1>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/david-esumei-4b09041a6">LinkedIn Profile</a></li>
                 <li><a href="https://byui.instructure.com/">I-Learn</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite
                         Scripture</a></li>
-                <li><a href="#">Final Project Folder</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="card">
             <h2>About Me</h2>
-            <img src="image-1.jpg" alt="Image of Esumei David">
-            <p>My name is David also known as Clark. I was born in Nigeria and
-                currently stay alone at Lagos. I work at an advertising/marketing
-                firm as a social media manager. I am single at the moment. </p>
-            <img src="flag.jpg" alt="Flag of Nigeria">
-            <p> Lagos, Nigeria</p>
-            <p>Lagos, Nigeria is a vibrant and bustling coastal city known for
-                its significant economic, cultural, and entertainment contributions; it is the most populous city in
-                Africa, featuring a dynamic blend of modernity and rich heritage, with bustling markets, lively
-                nightlife, beautiful beaches, and a rapidly growing skyline that reflects its status as a major
-                financial hub.</p>
+            <div class="about">
+                <div class="info">
+                    <figure>
+                        <img src="images/image-1.jpg" alt="Image of Esumei David">
+                    </figure>
+                    <p>My name is David also known as Clark. I was born in Nigeria and
+                        currently stay alone at Lagos. I work at an advertising/marketing
+                        firm as a social media manager. I am single at the moment. </p>
+                </div>
+                <div class="country">
+                    <p class="location"> Lagos, Nigeria</p>
+                    <div class="content">
+                        <figure>
+                            <img src="images/flag.jpg" alt="Flag of Nigeria">
+                            <figcaption>Flag of Nigeria</figcaption>
+                        </figure>
+                        <p>Lagos, Nigeria is a vibrant and bustling coastal city known for
+                            its significant economic, cultural, and entertainment contributions; it is the most populous
+                            city in
+                            Africa, featuring a dynamic blend of modernity and rich heritage, with bustling markets,
+                            lively
+                            nightlife, beautiful beaches, and a rapidly growing skyline that reflects its status as a
+                            major
+                            financial hub.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="card">
+        <section class="card resource-card">
             <h2>Web Dev Resources</h2>
-            <ul>
-                <li><a href="https://www.freecodecamp.org/">Resource 1</a></li>
-                <li><a href="https://dev.to/">Resource 2</a></li>
-                <li><a href="https://dev.to/">Resource 3</a></li>
-            </ul>
+            <div class="resources">
+                <ul>
+                    <li><a href="https://www.freecodecamp.org/">freecodecamp</a></li>
+                    <li><a href="https://www.w3schools.com/">w3schools</a></li>
+                    <li><a href="https://dev.to/">Dev community</a></li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
@@ -55,8 +73,7 @@
         <p id="lastModified"></p>
     </footer>
     <script>
-        document.getElementById('2024').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+
     </script>
 </body>
 
