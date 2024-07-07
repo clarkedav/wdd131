@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Paris</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css" media="screen and (min-width: 768px)">
+    <!-- JavaScript File -->
+    <script src="script/place.js" defer></script>
+</head>
+<!-- <img srcset="images/hero.jpg 500w, 
+             images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px,
+            (max-width: 1200px) 800px,
+            100vw" alt="Example image"> -->
+<img src="images/hero.jpg" srcset="images/flag.jpg 512w, 
+             images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px, 
+            (max-width: 1200px) 800px, 
+            100vw" alt="Example image">
+
+
+<body>
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+    <!-- <img srcset="images/hero.jpg 701w, 
+            images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px, 
+           (max-width: 1200px) 800px" alt="Example image"> -->
+    <main>
+        <section id="hero">
+            <picture>
+                <!-- <img srcset="images/hero.jpg 500w, 
+             images/hero-large.jpg 1000w" sizes="(max-width: 600px) 100vw, 
+            (max-width: 1200px) 100vw" alt="A scenic view"> -->
+                <!-- <source srcset="images/hero-large.jpg" media="(min-width: 600px)">
+                <source srcset="images/hero.jpg" media="(min-width: 0px)"> -->
+                <!-- <img src="images/hero.jpg" alt="Paris"> -->
+            </picture>
+        </section>
+        <section id="Data">
+            <p><b>Area: </b>587,041 sq km</p>
+
+        </section>
+
+        <section id="weather">
+            <h2>Weather <span class="weather-icon">⛅</span></h2>
+            <p>Current weather: Sunny, 25°C</p>
+        </section>
