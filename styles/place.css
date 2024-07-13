@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1em background-color white;
+}
+
+.container img {
+    width: 100%;
+}
+
+header {
+    background-color: #45a049;
+    text-align: center;
+    padding: 1em;
+}
+
+header h1 {
+    font-size: 28px;
+    color: white;
+}
+
+main {
+    background-color: rgb(252, 251, 251);
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #45a049;
+    color: white;
+}
+
+footer p {
+    font-size: 1.2rem;
+    margin: 0.5em 0;
+    color: white;
+}
+
+#hero {
+    position: relative;
+}
+
+#data,
+#weather {
+    margin-top: 1em;
+}
+
+.data-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: white;
+}
+
+.data-h2 {
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+.data-text {
+    background-color: #45a049;
+    padding: 0.5em;
+    text-align: left;
+    margin-left: -10px;
+    margin-top: -7px;
+}
+
+.sub-data {
+    padding: 0.5em;
+    line-height: 1.5;
+}
+
+.sub-data div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.sub-data div h3 {
+    flex-basis: 45%;
+    margin: 0;
+    text-align: left;
+}
+
+.sub-data div p {
+    flex-basis: 55%;
+    margin: 0;
+    text-align: right;
+}
+
+#weather {
+    margin-top: 2em;
+}
+
+.weather-icon {
+    vertical-align: middle;
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding: 0;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    footer p {
+        font-size: 1.5rem;
+
+    }
+
+    .data-box {
+        max-width: 200px;
+    }
+
+}

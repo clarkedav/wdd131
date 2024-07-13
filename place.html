@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visit Paris</title>
+    <title>Visit Nigeria</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS Files -->
@@ -13,40 +13,88 @@
     <!-- JavaScript File -->
     <script src="script/place.js" defer></script>
 </head>
-<!-- <img srcset="images/hero.jpg 500w, 
-             images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px,
-            (max-width: 1200px) 800px,
-            100vw" alt="Example image"> -->
-<img src="images/hero.jpg" srcset="images/flag.jpg 512w, 
-             images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px, 
-            (max-width: 1200px) 800px, 
-            100vw" alt="Example image">
 
-
-<body>
+<body class="container">
     <header>
         <h1>Nigeria</h1>
     </header>
-    <!-- <img srcset="images/hero.jpg 701w, 
-            images/hero-large.jpg 800w" sizes="(max-width: 600px) 480px, 
-           (max-width: 1200px) 800px" alt="Example image"> -->
     <main>
         <section id="hero">
             <picture>
-                <!-- <img srcset="images/hero.jpg 500w, 
-             images/hero-large.jpg 1000w" sizes="(max-width: 600px) 100vw, 
-            (max-width: 1200px) 100vw" alt="A scenic view"> -->
-                <!-- <source srcset="images/hero-large.jpg" media="(min-width: 600px)">
-                <source srcset="images/hero.jpg" media="(min-width: 0px)"> -->
-                <!-- <img src="images/hero.jpg" alt="Paris"> -->
+                <source srcset="images/hero.webp 1x" media="(max-width: 37.5em)">
+                <source srcset="images/hero-large.webp 2x" media="(min-width: 37.5em)">
+                <img srcset="images/hero.jpg 1x, images/hero-large.jpg 2x" alt="full images">
             </picture>
-        </section>
-        <section id="Data">
-            <p><b>Area: </b>587,041 sq km</p>
+            <div id="data" class="data-box">
+                <div class="data-h2">
+                    <h2 class="data-text">Data</h2>
+                </div>
+                <div class="sub-data">
+                    <div>
+                        <h3><b>Area:</b></h3>
+                        <p>923,768 sq km</p>
+                    </div>
+                    <div>
+                        <h3><b>Population:</b></h3>
+                        <p>27,691,018</p>
+                    </div>
+                    <div>
+                        <h3><b>Capital:</b></h3>
+                        <p>Abuja</p>
+                    </div>
+                    <div>
+                        <h3><b>Languages:</b></h3>
+                        <p>English and more</p>
+                    </div>
+                    <div>
+                        <h3><b>Currency:</b></h3>
+                        <p>Naira</p>
+                    </div>
+                    <div>
+                        <h3><b>Time Zone:</b></h3>
+                        <p>WAT(UTC+1)</p>
+                    </div>
+                    <div>
+                        <h3><b>CallingCode:</b></h3>
+                        <p>+234</p>
+                    </div>
+                    <div>
+                        <h3><b>internetTLD:</b></h3>
+                        <p>.ng</p>
+                    </div>
+                </div>
 
-        </section>
+            </div>
 
-        <section id="weather">
-            <h2>Weather <span class="weather-icon">⛅</span></h2>
-            <p>Current weather: Sunny, 25°C</p>
+            <div id="weather" class="data-box">
+                <div class="data-h2">
+                    <h2 class="data-text">Weather <span class="weather-icon">⛅</span></h2>
+                </div>
+                <div class="sub-data">
+                    <div>
+                        <h3><b>Temperature:</b></h3>
+                        <p>25°C to 40°C(77°F to 104°F)</p>
+                    </div>
+                    <div>
+                        <h3><b>Wind Speed:</b></h3>
+                        <p>10 km/h</p>
+                    </div>
+                    <div>
+                        <h3><b>Humidity:</b></h3>
+                        <p>90%</p>
+                    </div>
+                    <div>
+                        <h3><b>Wind Chill:</b></h3>
+                        <p id="wind-chill">N/A</p>
+                    </div>
+                </div>
+            </div>
         </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="2024"></span> Esumei David, Lagos/Nigeria.</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container img {
+    width: 100%;
+}
+
+header {
+    background-color: #45a049;
+    text-align: center;
+    padding: 1em;
+
+}
+
+header h1 {
+    font-size: 40px;
+    color: white;
+}
+
+main {
+    background-color: rgb(253, 253, 253);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #45a049;
+    color: white;
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin: 0.5em 0;
+    color: white;
+}
+
+#hero {
+    position: relative;
+    overflow: hidden;
+}
+
+#data,
+#weather {
+    position: absolute;
+}
+
+.data-box {
+    box-shadow: 0 0px 10x rgb(0, 0, 0);
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 0px;
+}
+
+#data {
+    top: 10%;
+    left: 4%;
+}
+
+.data-h2 {
+    width: 100%;
+    background-color: white;
+    padding: 1.2em 0;
+    opacity: .85;
+    padding-right: 1.2em;
+    text-align: center;
+}
+
+.data-text {
+    color: white;
+    background-color: #45a049;
+    padding: .5em;
+    text-align: left;
+    margin-left: -10px;
+    margin-top: -7px;
+    font-size: 25px;
+}
+
+.data-box .sub-data {
+    text-align: left;
+    /* margin-top: 10px; */
+    background-color: white;
+    opacity: .9;
+    width: 100%;
+    padding-top: 5px;
+    padding-right: 1.2em;
+    padding-bottom: .5em;
+    line-height: 1.5;
+}
+
+.sub-data div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+.sub-data div h3 {
+    flex-basis: 45%;
+    margin: 0;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+.sub-data div p {
+    flex-basis: 55%;
+    margin: 0;
+    text-align: left;
+
+}
+
+#weather {
+    bottom: 10%;
+    right: 4%;
+    text-align: center;
+}
