@@ -34,7 +34,37 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #45a049;
 }
-
+#temple-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .temple-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .temple-card h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+  }
+  
+  .temple-card p {
+    margin: 0.5em 0;
+  }
 
 main h2 {
     text-align: center;
@@ -119,4 +149,8 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+.data
+{
+    text-align: center;
 }
