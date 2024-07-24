@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #f095dc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sub {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Container */
+.container {
+    margin: auto;
+    padding: 20px;
+    flex: 1;
+}
+
+.container h2 {
+    padding-left: 78px;
+}
+
+/* Home Page Styles */
+.hero {
+    height: 400px;
+    color: rgb(241, 97, 222);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    background-color: gold;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+/* Styles for the introduction text */
+.hero .intro-highlight {
+    color: rgb(8, 8, 8);
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.hero .intro-description {
+    color: gold;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.featured-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    /* width: 30%; */
+    margin: 20px;
+    text-align: center;
+}
+
+.product img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* About Page Styles */
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.about-section div {
+    flex: 1;
+    margin: 20px;
+}
+
+/* Blog Page Styles */
+.blog-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post {
+    margin: 20px 0;
+}
+
+.blog-post h2 {
+    margin: 0;
+}
+
+.blog-post p {
+    margin: 10px 0 0;
+}
+
+/* Contact Page Styles */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .featured-products,
+    .about-section {
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 1300px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slideshow slides */
+.slide {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 1500px;
+    animation: slideIn 1s forwards;
+}
+
+.slide img {
+    width: auto;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+}
+
+/* Active slide */
+.active {
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+.container-thank {
+    text-align: center;
+}
