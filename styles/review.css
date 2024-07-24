@@ -21,13 +21,20 @@ main {
     margin-bottom: 1em;
 }
 
+.form-group span {
+    color: rgb(12, 178, 243);
+}
+
 label {
     display: block;
     margin-bottom: 0.5em;
     font-weight: bold;
 }
 
-input[type="text"], input[type="date"], select, textarea {
+input[type="text"],
+input[type="date"],
+select,
+textarea {
     width: 100%;
     padding: 0.5em;
     margin-bottom: 0.5em;
@@ -35,7 +42,8 @@ input[type="text"], input[type="date"], select, textarea {
     border-radius: 4px;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     margin-right: 0.5em;
 }
 
@@ -43,6 +51,7 @@ input[type="checkbox"], input[type="radio"] {
     font-size: 1.5em;
     cursor: pointer;
 }
+
 .features {
     display: flex;
     flex-wrap: wrap;
@@ -52,6 +61,7 @@ input[type="checkbox"], input[type="radio"] {
 .features input[type="checkbox"] {
     margin-right: 5px;
 }
+
 .features label {
     display: flex;
     align-items: center;
@@ -74,9 +84,10 @@ footer {
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
 }
+
 footer {
-    background-color:  #4CAF50;
-    color: #fff; 
+    background-color: #4CAF50;
+    color: #fff;
     padding: 20px;
     text-align: center;
 }
